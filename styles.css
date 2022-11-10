@@ -1,0 +1,581 @@
+*,
+:after,
+:before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+
+
+
+body {
+    background-color:  #ff5900;
+}
+
+
+h1 {
+    font-family: poppins, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h2 {
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h3 {
+    font-family: poppins, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h4 {
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+li {
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+button {
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(255, 89, 0);
+    border-radius: 12px;
+    padding: 5px 50px 5px 50px;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+
+}
+
+button:hover {
+  background-color: black;
+    text-decoration: line-through;
+    cursor: pointer;
+}
+
+
+/*-----Nav------*/
+
+.menuItem {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menuItem:hover {
+    text-decoration:line-through;
+  }
+  
+  .hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    background-color: rgb(255, 89, 0);
+    border: none;
+    cursor: pointer;
+    border-radius: 10px ;
+  }
+  
+  .closeIcon {
+    display: none;
+  }
+  
+  .menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: rgb(255, 89, 0);
+    color: white;
+    list-style: none;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+
+  .flex {
+    display: flex;
+  }
+  
+  .showMenu {
+    transform: translateY(0);
+  }
+
+  .menuIcon {
+    color: white;
+  }
+
+  .closeIcon {
+    color: white;
+  }
+
+  .material-icons {
+    font-size: 100px;
+  }
+  
+.logo a {
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 4vw;
+    z-index: 2;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.logo a:hover {
+    color: rgb(255, 89, 0);
+    text-decoration: line-through;
+}
+
+.typing-demo {
+  width: 22ch;
+  animation: typing 2s steps(21);
+  white-space: nowrap;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+/*------Herosection--------*/
+.herosection {
+    background-color: black;
+}
+#video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.7;
+    z-index: -1;
+  }
+
+  .linjer {
+    display: flex;
+    z-index: 1;
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 5%;
+    font-size: 1.5rem;
+  }
+
+  .linjer li {
+    list-style-type: none;
+  }
+
+  .linjer a {
+    color: white;
+    text-decoration: none;
+    float: right;
+  }
+
+  .voreslinjer {
+    color: white;
+    font-size: 1.6rem;
+  }
+
+  .linjer a:hover {
+    text-decoration: line-through;
+    color:rgb(255, 89, 0);
+  }
+
+  .infotekst {
+    color: white;
+    width: 55%;
+    font-size: 1.2rem;
+    margin-right: 20vw;
+    line-height: 2.3;
+  }
+
+  .tilmelding  {
+    background-color: #ff5900;
+    color: white;
+  }
+
+  .tilmelding:hover {
+    border: 1px solid #ff5900;
+    background-color: transparent;
+
+  }
+
+  
+  /*--------SEction 1 - split---------*/
+
+  .section1 {
+    background-color: rgb(230, 230, 230);
+  }
+
+  .om {
+    display: flex;
+    padding: 5%;
+  }
+
+  .om h3 {
+    margin-right: 5%;
+    line-height: 2;
+  }
+
+  .om img {
+    min-width: 50%;
+  }
+
+  .om h2 {
+    font-size: 1.4rem;
+    margin-right: 5%;
+    margin-bottom: 2%;
+  }
+
+
+
+  /*------SEction 2 - split-------*/
+
+  .section2 {
+    background-color: rgb(230, 230, 230) ;
+  }
+  .forfatter {
+    display: flex;
+    padding: 5%;
+  }
+
+  .forfatter img {
+    min-width: 50%;
+    margin-right: 5%;
+  }
+
+  .forfatter h2 {
+    font-size: 2rem;
+  }
+
+  .linkforfatterlinjen a {
+    color: black;
+  }
+
+  .linkforfatterlinjen a:hover {
+    color:  rgb(255, 89, 0);
+    text-decoration: line-through;
+  }
+
+  .forfatter h2 {
+    font-size: 1.4rem;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  .btnsection2 {
+    float: right;
+  }
+
+
+  /*------Section 3 - events ------*/
+
+  .section3 {
+    background-color: rgb(230, 230, 230);
+    height: 100%;
+  }
+
+  .section3 h1 {
+    margin-left: 5%;
+    font-size: 4rem;
+  }
+
+  .detsker {
+    margin-left: 5%;
+  }
+
+  .eventsflex {
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+  .eventsflex img {
+    width:80%;
+  }
+
+  .text {
+    max-width: 80%;
+  }
+
+  .btnevents {
+    margin-top: 5%;
+    margin-bottom: 25%;
+  }
+
+  /*------Footer------*/
+
+
+  footer {
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+  
+
+  .some {
+    font-size: 2rem;
+    margin-top: 5%;
+  }
+
+  .some a {
+    color: white;
+  }
+
+  .btnnyhedsbrev:hover {
+    border: 1px solid black;
+  }
+
+
+
+
+
+  @media only screen and (min-width: 1000px) and (max-width: 1400px) {
+
+
+/*------Herosection--------*/
+
+  .linjer {
+    font-size: 1.2rem;
+  }
+
+  .infotekst {
+    font-size: 1rem;
+  }
+  
+  /*--------SEction 1 - split---------*/
+  .om img {
+    height: fit-content ;
+  }
+
+  .om h2 {
+    font-size: 1rem;
+  }
+
+  .om h3 {
+    font-size: 0.8rem;
+  }
+  
+    /*--------SEction 2 - split---------*/
+
+  .forfatter img {
+    height: fit-content;
+  }
+
+  .forfatter h2 {
+    font-size: 1rem;
+  }
+
+  .forfatter h3 {
+    font-size: 0.8rem;
+  }
+
+  /*---Events----*/
+  .eventsflex {
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+footer {
+    margin-top: 10vh;
+}
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+
+    /*------Herosection--------*/
+
+    .linjer {
+        font-size: 1.2rem;
+      }
+    
+      .infotekst {
+        font-size: 1rem;
+        width: 50%;
+      }
+
+      /*--------SEction 1 - split---------*/
+
+  .om {
+    display: block;
+  }
+
+  .om img {
+    width: 100%;
+  }
+  
+  .btnsection1 {
+    margin-bottom: 5%;
+    }
+
+ /*------SEction 2 - split-------*/
+
+  .forfatter {
+    display: block;
+  }
+
+  .forfatter img {
+    width: 100%;
+  }
+
+  .btnsection2 {
+    float: left;
+  }
+
+   /*------Section 3 - events ------*/
+
+
+
+  .eventsflex {
+    grid-template-columns: 1fr 1fr;
+}
+
+  .eventsflex img {
+    width:100%;
+  }
+
+
+  /*------Footer------*/
+
+
+  footer {
+    display: block;
+    margin-top: 5vh;
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .kort {
+    margin-bottom: 5vh;
+  }
+
+  .some {
+    margin-bottom: 5vh;
+  }
+
+  .btnnyhedsbrev {
+    margin-top: 5vh;
+  }
+  
+}
+
+@media only screen and  (max-width: 699px) {
+/*------Herosection--------*/
+.logo a{
+    padding-top: 5%;
+}
+
+
+  .linjer ul {
+    display: none;
+  }
+
+  .infotekst {
+    width: 100%;
+    font-size: 1rem;
+    margin-right: 5%;
+  }
+
+  .linjer {
+    margin-top: 40%;
+  }
+
+/*--------SEction 1 - split---------*/
+
+    .om {
+        display: block;
+    }
+    
+    .om img {
+        width: 100%;
+    }
+      
+    .btnsection1 {
+        margin-bottom: 5%;
+        }
+    
+     /*------SEction 2 - split-------*/
+    
+      .forfatter {
+        display: block;
+      }
+    
+      .forfatter img {
+        width: 100%;
+      }
+    
+      .btnsection2 {
+        float: left;
+      }
+    
+       /*------Section 3 - events ------*/
+
+      .eventsflex {
+        grid-template-columns: 1fr;
+    }
+    
+      .eventsflex img {
+        width:100%;
+      }
+
+      .text {
+        max-width: 100%;
+    }
+    
+    
+      /*------Footer------*/
+    
+    
+      footer {
+        display: block;
+        margin-top: 5vh;
+        display: table;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+      .kort {
+        margin-bottom: 5vh;
+      }
+    
+      .some {
+        margin-bottom: 5vh;
+      }
+    
+      .btnnyhedsbrev {
+        margin-top: 5vh;
+      }
+      
+    }
